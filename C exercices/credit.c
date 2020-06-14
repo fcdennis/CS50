@@ -19,8 +19,8 @@ int main(void)
     //finding out the card brand
     if (validador % 10 == 0)
     {
-       string card_brand = brand(number);
-       printf("%s\n", card_brand);
+        string card_brand = brand(number);
+        printf("%s\n", card_brand);
     }
     else
     {
@@ -31,23 +31,26 @@ int main(void)
 // function that verify if the number is a valid card
 int valido(long number)
 {
+    //Conjunto de variaveis
     long resultado1 = 0, resultado2 = 0;
     int sobra = 0, validador1 = 0, validador2 = 0;
+    // Loop
     do
     {
-       validador2 += (number % 10);
-       resultado1 = number / 10;
-       resultado2 = resultado1 / 10;
-       sobra = 2 * (resultado1 % 10);
-       if (sobra < 10)
-       {
-           validador1 += sobra;
-       }
-       else
-       {
-           validador1 += 1 + (sobra - 10);
-       }
-       number = resultado2;
+        validador2 += (number % 10);
+        resultado1 = number / 10;
+        resultado2 = resultado1 / 10;
+        sobra = 2 * (resultado1 % 10);
+        //desvio
+        if (sobra < 10)
+        {
+            validador1 += sobra;
+        }
+        else
+        {
+            validador1 += 1 + (sobra - 10);
+        }
+        number = resultado2;
     }
     while (number > 0);
     int validador = validador1 + validador2;
@@ -57,26 +60,42 @@ int valido(long number)
 // function that defines the credit card brand
 string brand(long number)
 {
-    int cont = 1;
+    //contador
     long i = 0;
-    for (i = number; i > 10;)
+    int cont = 1;
+    for (i = number; i > 100;)
     {
         i /= 10;
         cont++;
     }
-    //brandes
-    if (cont == 16 && i == 5)
+    //Mastercards
+    if (i == 51 || i == 52)
     {
         return "MASTERCARD";
     }
-    else if (cont == 15)
+    else if (i == 53 || i == 54)
+    {
+        return "MASTERCARD";
+    }
+    else if (i == 55)
+    {
+        return "MASTERCARD";
+    }
+    //AMEX
+    else if (i == 34 || i == 37)
     {
         return "AMEX";
     }
-    else if (cont == 13 || (cont == 16 && i == 4))
+    //VISA
+    else if (cont + 1 == 13 && i / 10 == 4)
     {
         return "VISA";
     }
+    else if (cont + 1 == 16 && i / 10 == 4)
+    {
+        return "VISA";
+    }
+    //INVALID
     else
     {
         return "INVALID";
