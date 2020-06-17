@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <cs50.h>
+#include <stdlib.h>
 
 int cont_div(int numero, int divisor, int contador);
 int main(void)
