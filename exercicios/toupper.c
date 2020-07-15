@@ -15,11 +15,8 @@ int main(void)
     char *t = malloc(strlen(l) + 1);
     
     //Copy string into memory
-    for (int i = 0, n = strlen(l); i <= n; i++)
-    {
-        t[i] = l[i];
-    }
-    
+    strcpy(t,l);
+
     //Capitalize copy
     t[0] = toupper(t[0]);
     
