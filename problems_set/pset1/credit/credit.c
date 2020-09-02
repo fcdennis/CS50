@@ -3,6 +3,7 @@
 
 int valido(long number);
 string brand(long number);
+
 int main(void)
 {
     //reciving a valid number
