@@ -46,4 +46,5 @@ def index(letters, words, sentences):
     return (0.0588 * L) - (0.296 * S) - 15.8
 
 
-main()
+if __name__ == "__main__":
+    main()
