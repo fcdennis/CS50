@@ -16,28 +16,60 @@ font-family: 'Source Code Pro', monospace;
     box-sizing: border-box;
 }
 
-h1{
+body {
+    width: 98vw;
+    margin: 0 auto;
+
+    text-align: center;
+
+    background-color: hsl(240, 100%, 25.1%);
+}
+
+
+h1 {
     font-family: 'Architects Daughter', cursive;
+    font-size: 3.5rem;
+    color: hsl(15.9, 100%, 16.27%);
+
 }
 
 h2 {
     font-family: 'Ranchers', cursive;
+    font-size: 3rem;
+    color: hsl(15.9, 100%, 83.73%);
+}
+
+ul {
+    margin-bottom: 1rem;
 }
 
 li{
     display: inline;
     font-family: 'Roboto', sans-serif;
-    font-size: 2.5rem;
+    font-size: 2rem;
 
     border: solid 1px black;
-    background-color: black;
+    background-color: hsl(60, 100%, 97.06%);
     text-decoration: none;
+}
+
+figure {
+    margin-bottom: 1rem;
 }
 
 figcaption{
     font-family: 'Source Code Pro', monospace;
+    font-size: 2.5rem;
+    color: hsl(90.12, 100%, 50%);
 }
 
 a {
     text-decoration: none;
+    color: hsl(16.24, 100%, 50%);
+}
+
+.seasonheader  h3{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 3rem;    
+     color: hsl(89.64, 100%, 16.27%);
 }

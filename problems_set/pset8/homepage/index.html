@@ -1,45 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/styles.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="public/css/styles.css" rel="stylesheet">
+
+   <script src="handlebars.min.js"></script>
+
+    <script id="seasonshow" type="text/x-handlebars-template">
+        {{#each anime}}
+        <div id="{{this.season}}">
+            <header class="seasonheader">
+                <h3>{{this.season}} Season</h3>
+            </header>
+            <figure>
+            <a href={{this.link}} target="_blank"><img
+            src={{this.source}} alt="{{this.name}}"></a>
+            <figcaption>{{this.name}}</figcaption>
+            </figure>
+        </div>
+        {{/each}}
+    </script>
+
     <title>Anime Index</title>
 </head>
+
 <body>
-<header>
-    <h1>Anime Index</h1>
-    <h2>Find out the best place to watch your favorite anime</h2>
-</header>
-<nav>
-    <ul>
-        <li><a href="netflix.html">Netlix</a></li>
-        <li><a href="amazonprime.html">Amazon</a></li>
-        <li><a href="crunchyroll.html">Crunchyroll</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-    </ul>
-</nav>
-<div class="summer">
-    <figure>
-        <a href="https://www.crunchyroll.com/food-wars-shokugeki-no-soma" target="_blank"><img src="public/img/foodWars.jpg" alt="foodWars"></a>
-        <figcaption>Food Wars!</figcaption>
-    </figure>
-</div>
-<div class="fall"></div>
-<figure>
-    <a href="https://www.crunchyroll.com/haikyu" target="_blank"><img src="public/img/haikyuu.jpg" alt="Haikyuu"></a>
-    <figcaption>Haikyuu!</figcaption>
-</figure>
-<div class="winter"></div>
-<figure>
-    <a href="https://www.crunchyroll.com/rezero-starting-life-in-another-world-" target="_blank"><img src="public/img/reZero.jpg" alt="Re:Zero"></a>
-    <figcaption>Re:Zero</figcaption>
-</figure>
-<div class="spring"></div>
-<figure>
-    <a href="https://www.crunchyroll.com/pt-br/fruits-basket" target="_blank"><img src="public/img/fruitsBaskets.jpg" alt="Fruits Basket"></a>
-    <figcaption>Fruits Basket</figcaption>
-</figure>
+    <header id="navheader">
+        <h1>Anime Index</h1>
+        <h2>Find out the best place to watch your favorite anime</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="netflix.html">Netlix</a></li>
+            <li><a href="crunchyroll.html">Crunchyroll</a></li>
+            <li><a href="manga.html">Manga</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="shows">
+    </div>
+
+    <scrip src="public/scripts/season.js"></script>
 </body>
+
 </html>
