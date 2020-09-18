@@ -5,24 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="public/css/styles.css" rel="stylesheet">
-
-   <script src="handlebars.min.js"></script>
-
-    <script id="seasonshow" type="text/x-handlebars-template">
-        {{#each anime}}
-        <div id="{{this.season}}">
-            <header class="seasonheader">
-                <h3>{{this.season}} Season</h3>
-            </header>
-            <figure>
-            <a href={{this.link}} target="_blank"><img
-            src={{this.source}} alt="{{this.name}}"></a>
-            <figcaption>{{this.name}}</figcaption>
-            </figure>
-        </div>
-        {{/each}}
-    </script>
-
     <title>Anime Index</title>
 </head>
 

@@ -1,8 +1,4 @@
-const source = document.querySelector("#seasonshow");
-const template = Handlebars.compile(source);
-
-const context = {
-    anime: [
+const animes = [
         {
             name: 'Food Wars!',
             source: "public/img/foodWars.jpg",
@@ -33,9 +29,4 @@ const context = {
             link: "https://www.crunchyroll.com/haikyu",
             season: "Fall"
         }
-    ]
-};
-
-const compileHtml = template(context);
-
-document.querySelector(".shows").innerHTML = compileHtml;
+]
