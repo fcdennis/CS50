@@ -1,36 +1,76 @@
+:root{
+    font-size: 60%;
+}
 * {
     margin: 0;
     padding:  0;
+    border: 0;
     box-sizing: border-box;
+}
 
-    font-size: 60%;
+ul, ol, li {
+    list-style: none;
 }
 
 body {
+    width: 98vw;
     background-color: hsl(255, 100%, 50%);
 }
 
 header h1 {
-    font-size: 5rem;
+    font-size: 3.5rem;
     color: hsl(180, 90%, 70%);
+    text-align: end;
 }
 
 header h2 {
-    font-size: 4rem;
+    font-size: 2.5rem;
     color: hsl(90, 100%, 50%);
-}
-
-nav li {
-    display: inline;
-    font-size: 3rem;
+    text-align: end;
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: 3rem;
     color: hsl(10, 100%, 50%);
+    text-align: center;
+}
+
+nav ul {
+    text-align: center;
+}
+nav li {
+    display: inline;
+    font-size: 2rem;
+}
+
+nav a{
+    text-decoration: none;
+    color: hsl(50, 100%, 50%);
+}
+
+.season{
+    text-align: center;
+    width: 100%;
 }
 
 .content figcaption{
-    font-size: 1.5rem;
-    color:  hsl(255, 100%, 100%)
+    font-size: 1.75rem;
+    color:  hsl(255, 100%, 100%);
+    text-align: center;
+}
+footer p{
+    font-size: 2rem;
+    text-align: center;
+    color: hsl(20, 75%, 85%);
+}
+
+@media (min-width: 765px) {
+    :root {
+        font-size: 62.5%;
+    }
+    .content{
+        display: inline-block;
+        width: 19.5%;
+        margin: 0.1rem;
+    }
 }
