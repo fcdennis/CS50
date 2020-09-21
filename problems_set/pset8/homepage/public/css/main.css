@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding:  0;
+    box-sizing: border-box;
+
+    font-size: 60%;
+}
+
+body {
+    background-color: hsl(255, 100%, 50%);
+}
+
+header h1 {
+    font-size: 5rem;
+    color: hsl(180, 90%, 70%);
+}
+
+header h2 {
+    font-size: 4rem;
+    color: hsl(90, 100%, 50%);
+}
+
+nav li {
+    display: inline;
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+    color: hsl(10, 100%, 50%);
+}
+
+.content figcaption{
+    font-size: 1.5rem;
+    color:  hsl(255, 100%, 100%)
+}

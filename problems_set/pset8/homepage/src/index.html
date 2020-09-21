@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Index</title>
+    <link rel="stylesheet" href="../public/css/main.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"
+        integrity="sha512-zT3zHcFYbQwjHdKjCu6OMmETx8fJA9S7E6W7kBeFxultf75OPTYUJigEKX58qgyQMi1m1EgenfjMXlRZG8BXaw=="
+        crossorigin="anonymous"></script>
+    
+    <!- Summer Script-->
+    <script id="summerShows" type="text/x-handlebars-template">
+        {{#each summerAnimes}}
+        <div class="content">
+            <figure>
+                <a href="{{this.link}}" target="_blank"><img src="{{this.src}}" alt="{{this.name}}"></a>
+                <figcaption>{{this.name}}</figcaption>
+            </figure>
+        </div>
+        {{/each}}
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <h1>Anime Index</h1>
+        <h2>Found out where to watch your favorite anime</h2>
+    </header>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Netflix</li>
+            <li>Crunchyroll</li>
+            <li>Mangas</li>
+            <li>Contact Us</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h3>Best Summer Animes</h3>
+        <div id="summerseason"></div>
+    </div>
+    <script src="../public/script/main.js" type="text/javascript"></script>
+</body>
+
+</html>
