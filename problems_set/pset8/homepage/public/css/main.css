@@ -3,6 +3,7 @@
 :root{
     font-size: 60%;
 }
+
 * {
     margin: 0;
     padding:  0;
@@ -15,7 +16,7 @@ ul, ol, li {
 }
 
 body {
-    width: 98vw;
+    max-width: 100vw;
     background-color:  hsl(247.5, 56.14%, 22.35%);
 }
 
@@ -37,6 +38,7 @@ header h2 {
     text-shadow:  1px 1px 1px#DBEDAC;
     margin-top: 1px;
     text-align: end;
+    margin: 1rem;
 }
 
 h3 {
@@ -51,6 +53,13 @@ h3 {
     background-color: #FAFAFA;
 }
 
+h4{
+    color: hsl(33.33, 69.23%, 92.35%);
+    font-weight: 400;
+    font-size: 2em;
+    font-family: 'Audiowide';
+}
+
 nav{
     display: inline;
     text-align: end;
@@ -59,6 +68,7 @@ nav{
 nav ul {
     list-style: none;
     text-transform: uppercase;
+    margin: 1rem;
 }
 nav li {
     display: inline;
@@ -78,10 +88,53 @@ nav li:hover {
     background-color:  #02731B;;
 }
 
+.columnParent {
+    display: flex;
+    flex-wrap: wrap;
+
+    max-width: 100%;
+    min-width: 30%;
+    height: auto;
+
+    resize: none;
+    overflow: hidden;
+    
+  }
+  
+  .columnChild {
+    background: lightgray;
+    font-size: 2rem;
+    text-align: center;
+    margin: 5px;
+    flex: 1 1 300px;
+  }
+
+  .columnChild h4{
+      font-size: 2.5rem;
+      color: hsl(247.5, 56.14%, 22.35%);
+  }
+
+  .columnChild img{
+      width: 30rem;
+  }
 
 .season{
     text-align: center;
     width: 100%;
+}
+
+#gameText {
+    color:  hsl(0, 0, 37.65%);
+    font-weight: 400;
+    font-size: 2em;
+    font-family: 'Audiowide';
+}
+
+.gameImage{
+    text-align: center;
+    color: hsl(247.5, 56.14%, 22.35%);
+    font-family: 'Luckiest Guy';
+    font-size: 2rem;
 }
 
 .content figcaption{
@@ -97,21 +150,9 @@ nav li:hover {
 }
 footer p{
     text-align: center;
-    color: #606060;
+    color: hsl(0, 0, 37.65%);
     font-family: 'Roboto';
     font-size: 1.5rem;
-}
-
-@media (min-width: 765px) {
-    :root {
-        font-size: 62.5%;
-    }
-
-    .content{
-        display: inline-block;
-        width: 19.5%;
-        margin: 0.1rem;
-    }
 }
 
 .carousel-inner{
@@ -124,9 +165,41 @@ footer p{
 }
 
 .caption {
-    color: white;
+    color: hsl(33.33, 69.23%, 88.43%);
     font-weight: 900;
     font-family:  'Cinzel Decorative';
     font-size: 3rem;
     margin-top: 3rem;
+}
+
+p {
+    font-family: 'Roboto';
+    font-size: 2rem;
+    color:  hsl(33.33, 69.23%, 88.43%);
+}
+
+#insideText{
+    color: navy;
+}
+
+@media  (min-width: 1001px){
+    :root {
+        font-size: 62.5%;
+    }
+    .content{
+        display: inline-block;
+        width: 19.5%;
+        margin: 0.1rem;
+    }
+}
+
+@media only screen and (min-width: 765px) and (max-width:1000px) {
+    :root {
+        font-size: 62.5%;
+    }
+    .content{
+        display: inline-block;
+        width: 30%;
+        margin: 0.1rem;
+    }
 }

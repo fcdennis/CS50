@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animes | Nippon Index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../public/css/main.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"
+        integrity="sha512-zT3zHcFYbQwjHdKjCu6OMmETx8fJA9S7E6W7kBeFxultf75OPTYUJigEKX58qgyQMi1m1EgenfjMXlRZG8BXaw=="
+        crossorigin="anonymous"></script>
+
+    <!- Summer Script-->
+        <script id="summerShows" type="text/x-handlebars-template">
+        {{#each summerAnimes}}
+        <div class="content">
+            <figure >
+                <figcaption>{{this.name}}</figcaption>
+                <a href="{{this.link}}" target="_blank"><img src="{{this.src}}" alt="{{this.name}}"></a>
+            </figure>
+        </div>
+        {{/each}}
+    </script>
+
+        <!- Fall Script-->
+            <script id="fallShows" type="text/x-handlebars-template">
+        {{#each fallAnimes}}
+        <div class="content">
+            <figure >
+                <figcaption>{{this.name}}</figcaption>
+                <a href="{{this.link}}" target="_blank"><img src="{{this.src}}" alt="{{this.name}}"></a>
+            </figure>
+        </div>
+        {{/each}}
+    </script>
+
+            <!- Winter Script-->
+                <script id="winterShows" type="text/x-handlebars-template">
+        {{#each winterAnimes}}
+        <div class="content">
+            <figure >
+                <figcaption>{{this.name}}</figcaption>
+                <a href="{{this.link}}" target="_blank"><img src="{{this.src}}" alt="{{this.name}}"></a>
+            </figure>
+        </div>
+        {{/each}}
+    </script>
+
+                <!- Spring Script-->
+                    <script id="springShows" type="text/x-handlebars-template">
+        {{#each springAnimes}}
+        <div class="content">
+            <figure >
+                <figcaption>{{this.name}}</figcaption>
+                <a href="{{this.link}}" target="_blank"><img src="{{this.src}}" alt="{{this.name}}"></a>
+            </figure>
+        </div>
+        {{/each}}
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Nippon Index</h1>
+        <h2>Found out where to watch your favorite anime</h2>
+    </header>
+    <br>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="mangas.html">Mangas</a></li>
+            <li><a href="animes.html">Animes</a></li>
+            <li><a href="games.html">Games</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <br>
+    <div class="season">
+        <h3>Best Summer Animes</h3>
+        <div id="summerBlock"></div>
+    </div>
+    <hr>
+    <br>
+    <div class="season">
+        <h3>Best Fall Animes</h3>
+        <div id="fallBlock"></div>
+    </div>
+    <hr>
+    <br>
+    <div class="season">
+        <h3>Best Winter Animes</h3>
+        <div id="winterBlock"></div>
+    </div>
+    <hr>
+    <br>
+    <div class="season">
+        <h3>Best Spring Animes</h3>
+        <div id="springBlock"></div>
+    </div>
+    <hr>
+    <br>
+
+    <footer>
+        <p>&copy;Nippon Index &ac;2020</p>
+    </footer>
+    <script src="../public/script/main.js" type="text/javascript"></script>
+</body>
+
+</html>

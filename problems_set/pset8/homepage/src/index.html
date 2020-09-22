@@ -1,110 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anime Index</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="../public/css/main.css">
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"
-        integrity="sha512-zT3zHcFYbQwjHdKjCu6OMmETx8fJA9S7E6W7kBeFxultf75OPTYUJigEKX58qgyQMi1m1EgenfjMXlRZG8BXaw=="
-        crossorigin="anonymous"></script>
-
-    <!- Summer Script-->
-        <script id="summerShows" type="text/x-handlebars-template">
-        {{#each summerAnimes}}
-        <div class="content">
-            <figure >
-                <figcaption>{{this.name}}</figcaption>
-                <a href="{{this.link}}" target="_blank"><img src="{{this.src}}" alt="{{this.name}}"></a>
-            </figure>
-        </div>
-        {{/each}}
-    </script>
-
-    <!- Fall Script-->
-        <script id="fallShows" type="text/x-handlebars-template">
-        {{#each fallAnimes}}
-        <div class="content">
-            <figure >
-                <figcaption>{{this.name}}</figcaption>
-                <a href="{{this.link}}" target="_blank"><img src="{{this.src}}" alt="{{this.name}}"></a>
-            </figure>
-        </div>
-        {{/each}}
-    </script>
-
-    <!- Winter Script-->
-        <script id="winterShows" type="text/x-handlebars-template">
-        {{#each winterAnimes}}
-        <div class="content">
-            <figure >
-                <figcaption>{{this.name}}</figcaption>
-                <a href="{{this.link}}" target="_blank"><img src="{{this.src}}" alt="{{this.name}}"></a>
-            </figure>
-        </div>
-        {{/each}}
-    </script>
-
-    <!- Spring Script-->
-        <script id="springShows" type="text/x-handlebars-template">
-        {{#each springAnimes}}
-        <div class="content">
-            <figure >
-                <figcaption>{{this.name}}</figcaption>
-                <a href="{{this.link}}" target="_blank"><img src="{{this.src}}" alt="{{this.name}}"></a>
-            </figure>
-        </div>
-        {{/each}}
-    </script>
+    <title>Nippon Index</title>
 </head>
-
 <body>
-    <div class="container">
-        <header>
-            <h1>Anime Index</h1>
-            <h2>Found out where to watch your favorite anime</h2>
-        </header>
-        <br>
-
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="mangas.html">Mangas</a></li>
-                <li><a href="games.html">Games</a></li>
-                <li><a href="contactus.html">Contact Us</a></li>
-            </ul>
-        </nav>
-        <br>
-
-        <div class="season">
-            <h3>Best Summer Animes</h3>
-            <div id="summerBlock"></div>
+    <header>
+        <h1>Nippon Index</h1>
+        <h2>Found out where to watch your favorite anime</h2>
+    </header>
+    <br>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="mangas.html">Mangas</a></li>
+            <li><a href="animes.html">Animes</a></li>
+            <li><a href="games.html">Games</a></li>
+        </ul>
+    </nav>
+    <br>
+    <main>
+        <h3>The Best of Nippon Pop Culture</h3>
+        <div class="columnParent">
+            <div class="columnChild">
+                <h4>Where to read your favorite Manga?</h4>
+                <a href="mangas.html"><img src="https://dw9to29mmj727.cloudfront.net/products/1421572540.jpg" alt="Food Wars!"></a>
+            </div>
+            <div class="columnChild">
+                <h4>Where to watch your favorite Anime?</h4>
+                <a href="animes.html"><img src="https://u.livechart.me/anime/9627/poster_image/7a5082cd751807a0e58456d84c6ec132.jpg?style=small&format=jpg" alt="The Misfit of Demon King Academy"></a>
+            </div>
+            <div class="columnChild">
+                <h4>Want to find a good game?</h4>
+                <a href="games.html"><img src="https://www.animesxis.com.br/wp-content/uploads/2020/06/Persona-4-golden.jpg" alt="Persona 4 Golden"></a>
+            </div>
         </div>
-        <br>
-        <div class="season">
-            <h3>Best Fall Animes</h3>
-            <div id="fallBlock"></div>
-        </div>
-        <br>
-        <div class="season">
-            <h3>Best Winter Animes</h3>
-            <div id="winterBlock"></div>
-        </div>
-        <br>
-        <div class="season">
-            <h3>Best Spring Animes</h3>
-            <div id="springBlock"></div>
-        </div>
-        <br>
-
-        <footer>
-            <p>&copy;Anime Index &ac;2020</p>
-        </footer>
-    </div>
-    <script src="../public/script/main.js" type="text/javascript"></script>
+    </main>
+    <footer>
+        <p>&copy;Nippon Index &ac;2020</p>
+    </footer>
+    
 </body>
-
 </html>
