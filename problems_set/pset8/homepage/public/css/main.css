@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Cinzel+Decorative&family=Luckiest+Guy&family=Special+Elite&family=Roboto&family=Ubuntu+Mono:ital@1&display=swap');
+
 :root{
     font-size: 60%;
 }
@@ -14,39 +16,68 @@ ul, ol, li {
 
 body {
     width: 98vw;
-    background-color: hsl(255, 100%, 50%);
+    background-color:  hsl(247.5, 56.14%, 22.35%);
 }
 
 header h1 {
-    font-size: 3.5rem;
-    color: hsl(180, 90%, 70%);
+    color: hsl(33.33, 69.23%, 88.43%);
     text-align: end;
+    font-weight: 900;
+    font-size: 3em;    
+    font-family: 'Cinzel Decorative';
+    text-shadow:  1px 1px 1px #ACACD5;
+    margin: 1rem;
 }
 
 header h2 {
-    font-size: 2.5rem;
-    color: hsl(90, 100%, 50%);
+    color: hsl(33.33, 69.23%, 92.35%);
+    font-weight: 400;
+    font-size: 2em;
+    font-family: 'Audiowide';
+    text-shadow:  1px 1px 1px#DBEDAC;
+    margin-top: 1px;
     text-align: end;
 }
 
 h3 {
-    font-size: 3rem;
-    color: hsl(10, 100%, 50%);
+    font-family: 'Special Elite';
+    font-size: 2.15rem;
+    color: #FF3333;
+    text-shadow: 1px 1px 1px #FF1111;
     text-align: center;
+    margin: auto;
+    margin-bottom: 1rem;
+    width: 23%;
+    background-color: #FAFAFA;
+}
+
+nav{
+    display: inline;
+    text-align: end;
 }
 
 nav ul {
-    text-align: center;
+    list-style: none;
+    text-transform: uppercase;
 }
 nav li {
     display: inline;
-    font-size: 2rem;
+    font-size: 1.75em;
+    background-color: #214CDB;
+    padding: 2px;
+    margin: 1px;
 }
 
 nav a{
+    font-family: 'Luckiest Guy';
     text-decoration: none;
     color: hsl(50, 100%, 50%);
 }
+
+nav li:hover {
+    background-color:  #02731B;;
+}
+
 
 .season{
     text-align: center;
@@ -54,23 +85,48 @@ nav a{
 }
 
 .content figcaption{
-    font-size: 1.75rem;
-    color:  hsl(255, 100%, 100%);
+    font-family: 'Ubuntu Mono';
+    font-size: 1.5rem;
+    color:hsl(20, 75%, 85%);
+    font-weight: 500;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
     text-align: center;
+
+    margin: auto;
 }
 footer p{
-    font-size: 2rem;
     text-align: center;
-    color: hsl(20, 75%, 85%);
+    color: #606060;
+    font-family: 'Roboto';
+    font-size: 1.5rem;
 }
 
 @media (min-width: 765px) {
     :root {
         font-size: 62.5%;
     }
+
     .content{
         display: inline-block;
         width: 19.5%;
         margin: 0.1rem;
     }
+}
+
+.carousel-inner{
+    text-align: center;
+}
+
+.mangaImage {
+    width: auto;
+    height: 45vh;
+}
+
+.caption {
+    color: white;
+    font-weight: 900;
+    font-family:  'Cinzel Decorative';
+    font-size: 3rem;
+    margin-top: 3rem;
 }

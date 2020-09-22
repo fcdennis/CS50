@@ -29,7 +29,7 @@ const context = {
       ],
       fallAnimes: [
         {
-            name: "Is IT Wrong to Try to Pick Up Girl in a Dungeon?",
+            name: "Dungeon Ni Deai",
             src: "https://u.livechart.me/anime/9613/poster_image/4e3733c87bfa56425b16de6237fe2711.jpg?style=small&format=jpg",
             link: "https://www.netflix.com/title/80185873"
         },
